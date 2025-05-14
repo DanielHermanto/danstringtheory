@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
   <meta name="google-site-verification" content="I8a4mpcEh2EvrRocL1Tg17z_3chzcztTLR1LmmQU_HY" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DanStringTheori - Les Gitar Anak Sleman</title>
-  <meta name="description" content="Kami menyediakan layanan kursus gitar privat langsung ke rumah yang dirancang khusus bagi pemula maupun pemain gitar yang ingin meningkatkan teknik dan pemahaman musik mereka.">
-  <meta name="keywords" content="Les privat gitar anak di rumah, Les gitar untuk anak pemula, Belajar gitar akustik anak di rumah">
-  <meta name="author" content="danstringtheory">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <meta name="description" content="Kursus gitar privat anak di rumah wilayah Sleman dan sekitarnya. Menyenangkan, terstruktur, dan efektif untuk usia 7–15 tahun.">
+  <meta name="keywords" content="Les gitar anak Sleman, Kursus gitar anak, Les privat gitar di rumah">
+  <meta name="author" content="danstringtheori">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #e8f5e9);
       color: #333;
     }
 
     header {
-      background: linear-gradient(to right, #005c97, #363795);
+      background-color: #4CAF50;
       color: white;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
       text-align: center;
+      border-bottom: 5px solid #388E3C;
     }
 
     header h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Comic Neue', cursive;
       font-size: 2.5rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    header p {
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
+      text-align: center;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .cta-button,
     .whatsapp-button {
-      background-color: #28a745;
+      background-color: #388E3C;
       color: white !important;
       padding: 0.75rem 1.5rem;
       border: none;
-      border-radius: 0.5rem;
+      border-radius: 0.75rem;
       font-size: 1rem;
       text-decoration: none;
       display: inline-block;
@@ -48,170 +66,189 @@
     }
 
     h2 {
-      color: #4a148c;
-      font-family: 'Playfair Display', serif;
+      color: #2E7D32;
+      font-weight: 600;
       margin-top: 2rem;
       text-align: center;
     }
 
     main {
-      text-align: center;
+      background-color: #fff;
+      padding: 3rem 1rem;
     }
 
-    p,
-    ul,
-    li {
+    p, ul, li {
       text-align: justify;
+      line-height: 1.7;
     }
 
     .package-table {
-      background-color: #fff;
+      background-color: #f1f8e9;
       border-radius: 0.5rem;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     .package-table th {
-      background-color: #ede7f6;
+      background-color: #c8e6c9;
     }
 
     .caption {
       text-align: center;
       font-style: italic;
       font-size: 0.9rem;
-      color: #666;
+      color: #555;
       margin-top: 0.5rem;
     }
 
-    footer {
-      background-color: #eee;
-      padding: 1rem 0;
+    .inspirational-quote {
+      font-style: italic;
+      color: #388E3C;
+      font-size: 1.1rem;
       text-align: center;
+      margin: 2rem 0;
+    }
+
+    footer {
+      background-color: #e0f2f1;
+      text-align: center;
+      padding: 1rem;
+      color: #4e4e4e;
       font-size: 0.9rem;
-      color: #555;
     }
 
     .animated-image {
       opacity: 0;
       animation: fadeIn 2s ease-in-out forwards;
       margin-top: 2rem;
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 10px rgba(0, 128, 0, 0.1);
     }
 
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
+    @media (max-width: 576px) {
+      header h1 {
+        font-size: 1.75rem;
       }
 
-      100% {
-        opacity: 1;
-        transform: translateY(0);
+      .cta-button,
+      .whatsapp-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
       }
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <div class="container">
-      <h1>Buka Potensi Musik Anak Anda Lewat Les Gitar yang Seru & Terstruktur</h1>
-      <p>Untuk anak usia 7–15 tahun. Belajar dari guru terpercaya, menggunakan metode yang cocok untuk anak-anak.</p>
-      <a href="https://wa.me/6285820625597?text= Halo, saya tertarik mencoba sesi trial gratis untuk anak saya. Bagaimana prosedurnya dan jadwal yang tersedia? Terima kasih 🙏" class="cta-button">Coba Gratis 1x via WA</a>
+
+<header>
+  <div class="container">
+    <h1>Buka Potensi Musik Anak Anda!</h1>
+    <p>Untuk usia 7–15 tahun. Belajar gitar secara menyenangkan & langsung praktik.</p>
+    <a href="https://wa.me/6285820625597?text=Halo, saya tertarik mencoba sesi trial gratis untuk anak saya." class="cta-button">Coba Gratis 1x</a>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+    <h2>Tentang Kursus</h2>
+    <p><strong>DanStringTheori</strong> adalah kursus gitar privat yang datang langsung ke rumah Anda, khusus dirancang untuk anak-anak usia 7–15 tahun. Didirikan oleh seorang musisi muda yang aktif melayani di gereja, DanStringTheori lahir dari pengalaman nyata membimbing para gitaris baru untuk mengembangkan keterampilan bermain gitar, bahkan terlibat dalam pelayanan musik.
+
+Kami percaya bahwa belajar musik bukan hanya soal teori dan teknik, tapi juga soal kegembiraan, karakter, dan panggilan. Karena itu, setiap sesi di DanStringTheori dikemas secara:
+
+<li>🎵 Interaktif – Anak-anak tidak hanya duduk dan mendengarkan, tapi juga diajak aktif bermain, menjawab, dan eksplorasi bunyi.</li>
+
+<li>🎵 Menyenangkan – Menggunakan pendekatan yang ramah anak, penuh semangat, dan bebas tekanan.</li>
+<li>🎵 Langsung Praktik – Dari pertemuan pertama, murid langsung memegang gitar dan belajar memainkan lagu-lagu sederhana yang mereka sukai.</li>
+
+Apakah anak Anda belum pernah menyentuh gitar sebelumnya? Atau sudah bisa sedikit bermain, tapi ingin diarahkan lebih serius? Kami siap menyesuaikan kurikulum dengan kebutuhan dan kecepatan belajar setiap anak.
+
+Lebih dari sekadar les, kami membangun rasa percaya diri melalui musik.</p>
+    <ul>
+      <li>✅ Guru datang ke rumah (wilayah Sleman dan sekitarnya)</li>
+      <li>✅ Khusus untuk anak-anak, pendekatan kreatif & ramah</li>
+      <li>✅ Terstruktur: belajar chord, strumming, dan iringan lagu</li>
+    </ul>
+    <img src="Les.jpg" alt="Les Gitar Privat Anak" class="animated-image">
+    <div class="caption">Bakat musik anak Anda layak berkembang sejak dini</div>
+  </section>
+
+  <div class="inspirational-quote">
+    "Musik adalah refleksi dari ciptaan yang teratur dan indah—mengajarkan anak mengenal harmoni, disiplin, dan kasih karunia dalam bentuk suara." 🎵
+  </div>
+
+  <section>
+    <h2>Paket Belajar (45–60 Menit)</h2>
+    <div class="table-responsive">
+      <table class="table package-table">
+        <thead>
+          <tr>
+            <th>Paket</th>
+            <th>Frekuensi</th>
+            <th>Tarif (Rp)</th>
+            <th>Catatan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Trial Gratis</td>
+            <td>1x</td>
+            <td>0</td>
+            <td>Sesi awal mengenal metode belajar</td>
+          </tr>
+          <tr>
+            <td>Paket Mini</td>
+            <td>4x/bulan</td>
+            <td>400.000</td>
+            <td>Cocok untuk pemula atau belajar santai</td>
+          </tr>
+          <tr>
+            <td>Paket Reguler</td>
+            <td>8x/bulan</td>
+            <td>700.000</td>
+            <td>Intensitas sedang, anak makin lancar</td>
+          </tr>
+          <tr>
+            <td>Paket Premium</td>
+            <td>12x/bulan</td>
+            <td>900.000</td>
+            <td>Latihan rutin, hasil maksimal</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </header>
+    <p class="text-muted fst-italic">
+      Catatan Penting:
+      <li>📌 Untuk area di luar jangkauan utama, akan dikenakan tambahan biaya transportasi sebesar Rp10.000–Rp20.000 per sesi, sesuai jarak.</li>
+<li>📌 Pembayaran dilakukan di awal sebagai komitmen jadwal, dan tidak dapat dikembalikan.</li>
+<li>📌 Murid diharapkan menyiapkan gitar pribadi masing-masing. Pengajar akan membawa materi pelajaran dan panduan latihan</li>
+    </p>
+  </section>
 
-  <main class="container py-5">
-    <section>
-      <h2>Tentang Kursus</h2>
-      <p><strong>DanStringTheori</strong> adalah layanan kursus les gitar privat panggilan ke rumah, khusus untuk anak-anak usia 7–15 tahun yang ingin belajar gitar secara menyenangkan, relevan, dan terstruktur.</p>
-      <p>Didirikan oleh seorang gitaris aktif yang telah melayani sebagai musisi gereja dan memiliki pengalaman dalam membimbing gitaris baru di lingkungan pelayanan, DanStringTheori hadir untuk membantu anak-anak membangun dasar teknik bermain gitar yang kuat — mulai dari penguasaan family chord, pembacaan diagram chord, hingga pola dasar strumming.</p>
-      <p>Kami percaya bahwa musik adalah sarana yang membentuk karakter dan kreativitas anak. Karena itu, pendekatan kami disesuaikan dengan usia dan gaya belajar anak, agar mereka tidak hanya bisa bermain gitar, tetapi juga menikmati proses belajar tanpa tekanan.</p>
-      <p>Setiap sesi dirancang interaktif dan langsung praktik, agar anak lebih cepat memahami materi dan percaya diri mengiringi lagu favorit, baik lagu anak, pop, maupun lagu rohani.</p>
+  <section>
+    <h2>Untuk Siapa Kelas Ini?</h2>
+    <ul>
+      <li>🧒 Anak usia 7–15 tahun, bahkan yang belum pernah pegang gitar</li>
+      <li>👨‍👩‍👧 Orang tua yang ingin anak berkembang secara kreatif</li>
+      <li>🏠 Keluarga yang ingin aktivitas produktif selain gadget</li>
+    </ul>
+  </section>
 
-      <ul>
-        <li>📍 Guru datang langsung ke rumah (wilayah Sleman dan sekitarnya)</li>
-        <li>🧒 Dikhususkan untuk anak-anak dengan pendekatan menyenangkan</li>
-        <li>✅ Terstruktur: dari nol sampai bisa main lagu</li>
-        <li>🎶 Berdasarkan pengalaman nyata di dunia pelayanan musik</li>
-      </ul>
+  <section class="text-center">
+    <h2>Mulai Hari Ini!</h2>
+    <p>Dapatkan sesi GRATIS coba 1x dan lihat semangat anak Anda saat belajar musik 🎸</p>
+    <a href="https://wa.me/6285820625597?text=Halo, saya ingin bertanya tentang les gitar anak. Boleh minta info lengkapnya?" class="whatsapp-button">Tanya via WhatsApp</a>
+  </section>
+  <section class="text-center mt-4">
+  <h2>Temukan saya di TikTok</h2>
+  <a href="https://www.tiktok.com/@danstringtheori" class="whatsapp-button black" target="_blank">Lihat di TikTok</a>
+</section>
 
-      <img src="Les.jpg" alt="Sesi Les Gitar Privat" class="img-fluid rounded shadow animated-image">
-      <div class="caption">Bakat musik anak Anda layak berkembang sejak dini</div>
-    </section>
+</main>
 
-    <section>
-      <h2>Paket Les (Durasi 45–60 Menit)</h2>
-      <div class="table-responsive">
-        <table class="table package-table">
-          <thead>
-            <tr>
-              <th>Paket</th>
-              <th>Frekuensi</th>
-              <th>Tarif (Rp)</th>
-              <th>Catatan</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Trial Gratis</td>
-              <td>1x</td>
-              <td>0</td>
-              <td>Sesi awal untuk mengenal dan membangun kepercayaan</td>
-            </tr>
-            <tr>
-              <td>Paket Mini</td>
-              <td>4x/bulan</td>
-              <td>400.000</td>
-              <td>Cocok untuk pemula atau belajar santai</td>
-            </tr>
-            <tr>
-              <td>Paket Reguler</td>
-              <td>8x/bulan</td>
-              <td>700.000</td>
-              <td>Cukup intens, cocok untuk anak yang sudah mulai serius</td>
-            </tr>
-            <tr>
-              <td>Paket Premium</td>
-              <td>12x/bulan</td>
-              <td>900.000</td>
-              <td>Latihan intensif, Hasil maksimal, Perhatian penuh dari pengajar</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+<footer>
+  &copy; 2025 DanStringTheori. Semua hak dilindungi.
+</footer>
 
-      <p class="text-muted fst-italic">
-        *Lokasi yang cukup jauh kemungkinan dikenai biaya transport tambahan sebesar Rp10.000–Rp20.000 per sesi.
-        Pembayaran les dilakukan di awal dan bersifat non-refundable.
-        Anak perlu menyiapkan gitar sendiri, karena guru hanya membawa bahan ajar.*
-      </p>
-    </section>
-
-    <section>
-      <h2>Untuk Siapa Kelas Ini?</h2>
-      <ul>
-        <li><strong>Anak usia 7–15 tahun</strong> yang ingin belajar musik meski belum pernah memegang gitar.</li>
-        <li><strong>Orang tua</strong> yang ingin membentuk kedisiplinan dan kreativitas anak lewat musik.</li>
-        <li><strong>Keluarga</strong> yang ingin aktivitas bermanfaat selain gadget & game.</li>
-      </ul>
-    </section>
-
-    <section class="text-center">
-      <h2>Ayo Mulai Hari Ini!</h2>
-      <p>🏱 Dapatkan sesi gratis untuk lihat langsung semangat anak belajar gitar!</p>
-      <a href="https://wa.me/6285820625597?text=Halo, saya ingin bertanya-tanya dulu tentang les gitar untuk anak. Apakah bisa dijelaskan bagaimana sistem belajarnya? 😊" class="whatsapp-button" target="_blank">Daftar via WhatsApp</a>
-      <a href="https://www.tiktok.com/@danstringtheory" class="whatsapp-button black" target="_blank">Lihat Video di TikTok</a>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2025 DanStringTheori – Les Gitar Anak Sleman</p>
-      <p>Lokasi: Sleman, Yogyakarta | Guru datang ke rumah | Anak wajib memiliki gitar sendiri</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
